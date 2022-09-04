@@ -1,0 +1,8 @@
+<players root="gfx/characters/costumes/" 
+         portraitroot="gfx/ui/stage/" 
+         nameimageroot="gfx/ui/boss/">
+	<player name="The Punished" skin="thepunished.png" hp="0" armor="4" black="2" bombs="1" items=""
+          nameimage="playername_thepunished.png" 
+          portrait="playerportrait_thepunished.png" costume = "14" skinColor="5" canShoot="false"
+		  birthright="Haunted Destiny" />
+</players>
