@@ -15,21 +15,6 @@ for _, key in pairs(persistentDataKeys) do
 end
 
 local game = Game()
-local pf = Font()
-pf:Load("font/pftempestasevencondensed.fnt")
-local tm = Font()
-tm:Load("font/teammeatfont10.fnt")
-
--- Load other lua files
-
-local scripts = {
-    "scripts.punished",
-    "scripts.constants"
-}
-
-for i,v in ipairs(scripts) do
-    include(v)
-end
 
 -- Iterate through all players
 function AnyPlayerDo(foo)
@@ -37,6 +22,17 @@ function AnyPlayerDo(foo)
 		local player = Isaac.GetPlayer(i)
 		foo(player)
 	end
+end
+
+function PunishedExists()
+    local player
+    for i = 1, game:GetNumPlayers() do
+        if Isaac.GetPlayer(i):GetName() == "The Punished" then
+            player = Isaac.GetPlayer(i)
+            break
+        end
+    end
+    return player
 end
 
 -- Get number of multishot projeciles (why the fuck isnt this in the api)
@@ -110,4 +106,30 @@ function GetNumProjectiles(player)
 
     local numProjectiles = baseProjectiles + stackingItemProjectiles + luckBasedProjectiles
     return numProjectiles
+end
+
+function mod:GetPlayerUsingItem()
+	local player = Isaac.GetPlayer(0)
+	for i = 1, game:GetNumPlayers() do
+		local p = Isaac.GetPlayer(i - 1)
+		if Input.IsActionTriggered(ButtonAction.ACTION_ITEM, p.ControllerIndex) or Input.IsActionTriggered(ButtonAction.ACTION_PILLCARD, p.ControllerIndex) then
+			player = p
+			player:GetData().WasHoldingButton = true
+			break
+		end
+	end
+	return player
+end
+
+-- Load other lua files
+print("loading scripts")
+local scripts = {
+    "scripts.punished",
+    "scripts.constants",
+    "scripts.items.condemnation",
+    "scripts.items.liberation"
+}
+
+for i,v in ipairs(scripts) do
+    include(v)
 end

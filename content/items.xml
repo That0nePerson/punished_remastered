@@ -1,0 +1,28 @@
+<items gfxroot="gfx/items/" version="1" deathanm2="gfx/death items.anm2">
+	<passive cache="" id="1" name="Condemnation" description="Haunted by sin" gfx="Condemnation.png" quality="4" tags="offensive" />
+	<active cache="" id="11" name="Liberation" description="Break your tethers" gfx="Liberation.png" maxcharges="2" chargetype="special" tags="quest" hidden="true" quality="4" />
+
+    <!--
+	<passive cache="" id="2" name="Haunting Memories" description="Ghost tears" gfx="Haunting Memories.png" quality="2" tags="offensive" />
+	<active cache="" id="12" name="Flashback" description="Remember who you were" gfx="Flashback.png" maxcharges="20" tags="quest" hidden="true" quality="3" />
+
+	<passive cache="" id="3" name="Inadequacy" description="Skill Issue" gfx="Inadequacy.png" quality="1" tags="nolostbr"/>
+	<passive cache="" id="4" name="Guilt" description="Your sins are coming for you" gfx="Guilt.png" quality="2" tags="offensive" />
+	<passive cache="" id="5" name="Anarchist's Payback" description="No bosses, no masters" gfx="Anarchist's Payback.png" devilprice="2" quality="4" tags="nolostbr" />
+	<passive cache="" id="6" name="Apostasy" description="Deny their offers, find yourself." gfx="Apostasy.png" quality="2" tags="offensive" />
+	<passive cache="" id="7" name="Cycle Of Abuse" description="Victims of victims" gfx="Cycle Of Abuse.png" devilprice="2" quality="4" tags="offensive" />
+	<passive cache="" id="8" name="Tenacity" description="Keep at it" gfx="Tenacity.png" quality="1" />
+	<passive cache="" id="9" name="Locked Memories" description="Huh.." gfx="Locked Memories.png" quality="3" tags="offensive" />
+	<passive cache="" id="10" name="Fading Memories" description="You know, back in Lesvos.." gfx="Fading Memories.png" tags="nolostbr" quality="4" />
+
+	<active cache="" id="13" name="Acceptance" description="Accept your sins" gfx="Acceptance.png" maxcharges="4" tags="offensive" quality="2" />
+	<active cache="" id="14" name="Revolution" description="We're on the same side!" gfx="Revolution.png" maxcharges="6" tags="offensive" quality="3" />
+	<active cache="" id="15" name="Cherished Memories" description="That was a nice day.." gfx="Cherished Memories.png" maxcharges="12" tags="book offensive" quality="3" />
+
+	<trinket cache="" name="The Punished's Only Frenemy" description="It haunts you" gfx="The Punished's Only Frenemy.png" />
+	<trinket cache="" name="Tainted Eye" id="191" description="See what you once were" gfx="Tainted Eye.png" />
+
+	Item Exclusive to Punished's Birthright
+	<passive cache="firedelay" id="16" name="Sad Ghost" description="All that's left" gfx="Sad Ghost.png" quality="2" hidden="true"/>
+    -->
+</items>
